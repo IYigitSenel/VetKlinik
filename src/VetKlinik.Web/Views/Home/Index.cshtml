@@ -1,2 +1,11 @@
-<h1>Veteriner Kliniğine Hoş Geldiniz</h1>
-<p>Bu sayfa HomeController içindeki Index metodundan geliyor.</p>
+@model VetKlinik.Web.Models.Hayvan
+
+<h1>Hayvan Bilgisi</h1>
+
+<ul>
+    <li>Ad: @Model.Ad</li>
+    <li>Tür: @Model.Tur</li>
+    <li>Irk: @Model.Irk</li>
+    <li>Doğum tarihi: @Model.DogumTarihi.ToString("dd.MM.yyyy")</li>
+    <li>Kilo: @Model.Kilo kg</li>
+</ul>
